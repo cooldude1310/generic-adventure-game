@@ -5,7 +5,7 @@ import os
 
 
 load = True
-loadtime = random.randint(10,15)
+loadtime = random.randint(0,15)
 loadicons = ["|","/","--","\\"]
 hardDifficulty = False
 seed = random.randint(1,1)
@@ -63,7 +63,7 @@ def main():
             return
     else: 
         print(f"Hello, {playerName}")
-    time.sleep(5)
+    time.sleep(3.5)
     clrscreen()
     print("Your mission today will be to collect and destroy all of the extremley dangerous cybercubes.")
     time.sleep(1/3)
