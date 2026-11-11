@@ -8,23 +8,10 @@ waitTime = 5
 hardDifficulty = False
 seed = random.randint(1,1)
 playerName = "Sam Altman"
-## for items, the associated number is its strength
-## for spells, the number is base damage also lvl is just a damage multiplier
 stats = {
-    "inventory": {
-        "wand": 5,
-        "apple": 10
-    },
-    "lvl": 1,
-    "multiplier": 1,
-    "spells": {
-        "basic cast": 15
-    },
     "hp": 35,
     "maxhp": 35
 }
-
-
 
 def intro():
     playerName = input("Welcome to the dungeon! What is your name?\n").strip().title()
