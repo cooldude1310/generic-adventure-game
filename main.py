@@ -3,7 +3,7 @@ import time
 import utils
 
 loadBool = True
-waitTime = 1/3
+waitTime = 5
 hardDifficulty = False
 seed = random.randint(1,1)
 playerName = "Sam Altman"
