@@ -26,6 +26,3 @@ def heal(a):
 def lvlup(b):
     stats["maxhp"] += b
     stats["lvl"] += 1
-
-def room():
-    print()
