@@ -1,6 +1,7 @@
 import random
 import time
 import utils
+import mechs
 
 loadBool = True
 waitTime = 5
@@ -79,6 +80,7 @@ def room1():
                 print("You have chosen to leave the first room without opening a loot chest.")
             elif choice == 3:
                 print("You have chosen to open the rightmost chest. ")
+
             elif choice == 2:
                 print("You have chosen to open the middle chest.")
             elif choice == 1:
