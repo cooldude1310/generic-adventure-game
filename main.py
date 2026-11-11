@@ -52,7 +52,7 @@ def intro():
         return
     print("Ok!")
     time.sleep(waitTime)
-    clrscreen()
+    utils.clrscreen()
     room1()
 
 def room1():
