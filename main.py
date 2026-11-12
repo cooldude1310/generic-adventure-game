@@ -12,7 +12,21 @@ stats = {
     "hp": 35,
     "maxhp": 35
 }
+inventory = {
+    "Gold":0,
+    "Key":0,
+    "Apple": {
+        "quant":1,
+        "type":"food",
+        "power":"10"
+    },
+    "Basic Sword": {
+        "quant":1,
+        "type":"weapon",
+        "power":"15"
+    },
 
+}
 def intro():
     playerName = input("Welcome to the dungeon! What is your name?\n").strip().title()
     if playerName == "":
@@ -65,13 +79,18 @@ def room1():
                 choice = -1 * pi
                 
                 print("You have chosen to leave the first room without opening a loot chest.")
-            elif choice == 3:
-                print("You have chosen to open the rightmost chest. ")
-
-            elif choice == 2:
-                print("You have chosen to open the middle chest.")
-            elif choice == 1:
-                print("You have chosen to open the leftmost chest. ")    
+            elif choice in [1,2,3]:
+                if choice == 3:
+                    print("You have chosen to open the rightmost chest. ")
+                elif choice == 2:
+                    print("You have chosen to open the middle chest.")
+                elif choice == 1:
+                    print("You have chosen to open the leftmost chest. ")
+                inventory = mechs.genContents(inventory)
+                time.sleep(waitTime)
+                print(f"You now have {inventory} in your inventory.")
+                time.sleep(waitTime * 2)
+                utils.clrscreen()
         else:
             utils.clrscreen()
             print(f"Invalid response {choice}\nPlease enter an integer between 1 and 4.")
