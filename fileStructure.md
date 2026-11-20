@@ -21,6 +21,5 @@
 ├── shell.py
 └── utils.py
 
-4 directories, 17 files
-
+3 directories, 11 files
 ```
