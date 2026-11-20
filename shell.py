@@ -42,4 +42,3 @@ def help():
 
 def man(comm):
     print("access and print manpage for command <comm> from respective .txt")
-help()

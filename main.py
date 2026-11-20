@@ -8,7 +8,7 @@ name = "tung tung tung sahur"
 fname = "brr brr patapim"
 loadBool = False
 pkgs = []
-hashtags = "###########################################"
+hashtags = "##############################################"
 
 def pacman(package):
     if not package in pkgs:   
@@ -98,14 +98,14 @@ def playGame(introBool=True):
         utils.wait()
         print("You have a VERY VERY important task today.")
         utils.wait()
-        print("Today you must help Rocky download GTA IV")
+        print("Today you must help Rocky download GTA VI")
         utils.wait()
         print("He plans to take all of December off due to a *sudden* cold.")
         print("( ͠° ͟ʖ ͡°)")
         utils.wait()
         print("However, your client is approxamatley 16.3 light years away on Erid and the only connection you have to his computer is a remote shell.")
         utils.wait()
-        print("You will have to SSH into his computer and install GTA IV using the GameShore CLI")
+        print("You will have to SSH into his computer and install GTA VI using the GameShore CLI")
         utils.wait()
         print("He also uses Arch Linux [btw]")
         utils.wait()
@@ -117,4 +117,4 @@ def playGame(introBool=True):
 
 
 utils.loading(loadBool)
-playGame(False)
+playGame()
