@@ -109,6 +109,8 @@ def playGame(introBool=True):
         utils.wait()
         print("He also uses Arch Linux [btw]")
         utils.wait()
+        print("Just to clarify, he does know how to use pacman but he is actually having issues getting into his own computer.")
+        utils.wait()
         print("At least he plans on paying you quite well.")
         utils.wait(True)
         print("You will need to use his package manager (pacman) to install the GameShore CLI.\n")
